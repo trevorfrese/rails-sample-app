@@ -8,6 +8,7 @@ trevor:
   activated: true
   activated_at: <%= Time.zone.now %>
 
+
 archer:
   name: Sterling Archer
   email: duchess@example.gov
@@ -15,12 +16,14 @@ archer:
   activated: true
   activated_at: <%= Time.zone.now %>
 
+
 lana:
   name: Lana Kane
   email: hands@example.gov
   password_digest: <%= User.digest('password') %>
   activated: true
   activated_at: <%= Time.zone.now %>
+
 
 mallory:
   name: Mallory Archer
@@ -36,4 +39,5 @@ user_<%= n %>:
   password_digest: <%= User.digest('password') %>
   activated: true
   activated_at: <%= Time.zone.now %>
+
 <% end %>
